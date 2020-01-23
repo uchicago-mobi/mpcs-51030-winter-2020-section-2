@@ -12,4 +12,11 @@ class TimeViewController: UIViewController {
     
     @IBOutlet var timeLabel: UILabel!
     
+    var time: String?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        timeLabel.text = time
+    }
+    
 }
