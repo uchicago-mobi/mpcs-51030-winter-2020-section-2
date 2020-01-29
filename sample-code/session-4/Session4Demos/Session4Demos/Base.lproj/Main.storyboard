@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iIZ-aU-Y1R">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animations 1-->
+        <scene sceneID="4rh-un-W8O">
+            <objects>
+                <viewController id="PPm-D2-hJO" customClass="Animations1ViewController" customModule="Session4Demos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NBo-1Y-BfG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EW9-Mz-NgG">
+                                <rect key="frame" x="177" y="147" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Animate!"/>
+                                <connections>
+                                    <action selector="tappedAnimate:" destination="PPm-D2-hJO" eventType="touchUpInside" id="81A-cL-fno"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OAH-kG-lh2">
+                                <rect key="frame" x="87" y="429" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aLO-Q3-hGB">
+                                <rect key="frame" x="87" y="248" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="oWQ-7T-Wrh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Animations 1" image="paperplane" catalog="system" id="aNe-sh-WOe"/>
+                    <connections>
+                        <outlet property="pinkView" destination="aLO-Q3-hGB" id="oPT-LQ-nwf"/>
+                        <outlet property="tealView" destination="OAH-kG-lh2" id="eHU-EG-USz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="slm-qO-Wva" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-342" y="-299"/>
+        </scene>
+        <!--Drawing-->
+        <scene sceneID="rKF-Zh-mcF">
+            <objects>
+                <viewController id="ycY-U4-pEO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1G7-K6-15O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fgl-ai-PHn" customClass="DrawingView" customModule="Session4Demos" customModuleProvider="target">
+                                <rect key="frame" x="20" y="44" width="374" height="769"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="HRM-Fk-LbB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Drawing" image="pencil.and.outline" catalog="system" id="HUx-0g-cP6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LFq-Uv-hDQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1236.231884057971" y="-965.625"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="T0J-Cg-E1g">
+            <objects>
+                <tabBarController id="iIZ-aU-Y1R" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xNP-in-6rA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ycY-U4-pEO" kind="relationship" relationship="viewControllers" id="TOI-cz-GdX"/>
+                        <segue destination="cyt-mu-an8" kind="relationship" relationship="viewControllers" id="t9c-E7-9Up"/>
+                        <segue destination="PPm-D2-hJO" kind="relationship" relationship="viewControllers" id="fL0-9n-0d9"/>
+                        <segue destination="bXe-DW-7Pw" kind="relationship" relationship="viewControllers" id="P1r-aN-ZxU"/>
+                        <segue destination="hWY-lh-42D" kind="relationship" relationship="viewControllers" id="v2p-L4-2Wx"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ssk-ym-P3B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1234" y="-240"/>
+        </scene>
+        <!--Gestures-->
+        <scene sceneID="fN3-ie-BW1">
+            <objects>
+                <viewController id="bXe-DW-7Pw" customClass="GesturesViewController" customModule="Session4Demos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mg0-Wv-umW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="groundhog" translatesAutoresizingMaskIntoConstraints="NO" id="uqB-Qx-0gG">
+                                <rect key="frame" x="119" y="557" width="115" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="g1n-d1-RVc" appends="YES" id="caE-wr-d2Y"/>
+                                    <outletCollection property="gestureRecognizers" destination="ZOp-51-gfr" appends="YES" id="etK-dS-b90"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YoW-67-UNt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gestures" image="hand.draw" catalog="system" id="BJF-bi-tnV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1tf-3d-l3o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="g1n-d1-RVc">
+                    <connections>
+                        <action selector="pan:" destination="bXe-DW-7Pw" id="Ea9-La-oT4"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="ZOp-51-gfr">
+                    <connections>
+                        <action selector="pinch:" destination="bXe-DW-7Pw" id="TU3-Ep-hlt"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-342" y="352"/>
+        </scene>
+        <!--Layers-->
+        <scene sceneID="IC5-7R-Qdy">
+            <objects>
+                <viewController id="cyt-mu-an8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kD0-YY-K9y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eNT-6O-Vf3" customClass="LayersView" customModule="Session4Demos" customModuleProvider="target">
+                                <rect key="frame" x="47" y="360" width="321" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7L3-Aa-2cp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Layers" image="aspectratio" catalog="system" id="xNY-sK-VMD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h5e-DG-bQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-342.02898550724638" y="-966.29464285714278"/>
+        </scene>
+        <!--Animations 2-->
+        <scene sceneID="sjx-Fl-HeJ">
+            <objects>
+                <viewController id="hWY-lh-42D" customClass="Animations2ViewController" customModule="Session4Demos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qmt-ou-nGR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6C-vp-9aP">
+                                <rect key="frame" x="126" y="60" width="163" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="CABasicAnimation"/>
+                                <connections>
+                                    <action selector="didTapBasicAnimation:" destination="hWY-lh-42D" eventType="touchUpInside" id="CWY-Ls-3AZ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pL5-uy-B9G">
+                                <rect key="frame" x="112" y="104" width="200" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HO4-G8-e5k">
+                                <rect key="frame" x="108" y="252" width="198" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="CAKeyframeAnimation"/>
+                                <connections>
+                                    <action selector="didTapKeyframeAnimation:" destination="hWY-lh-42D" eventType="touchUpInside" id="dWC-ws-ZJ8"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XNY-eX-hS2">
+                                <rect key="frame" x="112" y="296" width="200" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5H-1i-xWL">
+                                <rect key="frame" x="126" y="444" width="172" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="CASpringAnimation"/>
+                                <connections>
+                                    <action selector="didTapSpringAnimation:" destination="hWY-lh-42D" eventType="touchUpInside" id="Bfe-5O-Dih"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m9a-Jc-Dr5">
+                                <rect key="frame" x="112" y="481" width="200" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zop-jf-icz">
+                                <rect key="frame" x="152" y="629" width="110" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="CATransition"/>
+                                <connections>
+                                    <action selector="didTapTransition:" destination="hWY-lh-42D" eventType="touchUpInside" id="QyT-2I-QXL"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o8b-YN-h8z">
+                                <rect key="frame" x="112" y="673" width="200" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fVR-qL-QjX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Animations 2" image="wand.and.stars" catalog="system" id="VqI-sW-sTv"/>
+                    <connections>
+                        <outlet property="basicAnimationView" destination="pL5-uy-B9G" id="2s9-aq-iLx"/>
+                        <outlet property="keyframeAnimationView" destination="XNY-eX-hS2" id="ATL-1L-oIX"/>
+                        <outlet property="springAnimationView" destination="m9a-Jc-Dr5" id="9VD-Wd-r5f"/>
+                        <outlet property="transitionView" destination="o8b-YN-h8z" id="C5U-gT-e1A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9NS-Od-kLH" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1236" y="508"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aspectratio" catalog="system" width="64" height="46"/>
+        <image name="groundhog" width="114.5" height="110"/>
+        <image name="hand.draw" catalog="system" width="64" height="54"/>
+        <image name="paperplane" catalog="system" width="64" height="60"/>
+        <image name="pencil.and.outline" catalog="system" width="64" height="58"/>
+        <image name="wand.and.stars" catalog="system" width="64" height="56"/>
+    </resources>
+</document>
