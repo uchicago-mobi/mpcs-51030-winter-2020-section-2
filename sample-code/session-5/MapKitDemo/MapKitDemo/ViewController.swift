@@ -11,6 +11,8 @@ import MapKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var mapView: MKMapView!
+    
     let coordinate = CLLocationCoordinate2D(latitude: 40.730846,
                                             longitude: -73.997373)
 
