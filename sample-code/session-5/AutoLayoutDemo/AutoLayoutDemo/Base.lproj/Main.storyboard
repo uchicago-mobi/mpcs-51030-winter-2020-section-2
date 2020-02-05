@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L8h-OV-exR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Manual Layout-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ManualLayoutDemoViewController" customModule="AutoLayoutDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Manual Layout" image="hammer" catalog="system" id="Nhe-lZ-0GP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="-673"/>
+        </scene>
+        <!--Autoresizing-->
+        <scene sceneID="M7e-zx-UEI">
+            <objects>
+                <viewController id="cK5-mV-huy" customClass="AutoresizingDemoViewController" customModule="AutoLayoutDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ehY-ph-Muw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="aJF-np-KQo"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Autoresizing" image="sunset" catalog="system" id="whz-cH-Lsu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hlb-sb-GNj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="-254"/>
+        </scene>
+        <!--Auto Layout 2-->
+        <scene sceneID="0Nz-nY-dYj">
+            <objects>
+                <viewController id="7YI-b1-QdH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Dc-sx-4Vw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccR-ZA-nEs" userLabel="Indigo View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="x0h-X1-ZCR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nys-cU-PMV" userLabel="Red View">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="VvA-Ur-ziY"/>
+                                    <constraint firstAttribute="width" constant="100" id="lBO-xO-U1I"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Nys-cU-PMV" firstAttribute="centerY" secondItem="8Dc-sx-4Vw" secondAttribute="centerY" id="5s7-Mb-xoG"/>
+                            <constraint firstItem="ccR-ZA-nEs" firstAttribute="leading" secondItem="8Dc-sx-4Vw" secondAttribute="leading" id="GOC-dd-f3X"/>
+                            <constraint firstItem="ccR-ZA-nEs" firstAttribute="top" secondItem="8Dc-sx-4Vw" secondAttribute="top" id="Mcj-wB-Av7"/>
+                            <constraint firstItem="Nys-cU-PMV" firstAttribute="centerX" secondItem="Ew1-5n-mlk" secondAttribute="centerX" id="nrS-QS-qnw"/>
+                            <constraint firstItem="ccR-ZA-nEs" firstAttribute="trailing" secondItem="8Dc-sx-4Vw" secondAttribute="trailing" id="yNP-d7-P4E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ew1-5n-mlk"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Auto Layout 2" image="gauge" catalog="system" id="okC-d3-vdt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="478-9d-Imo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="874.55357142857144"/>
+        </scene>
+        <!--Auto Layout 1-->
+        <scene sceneID="4vi-mY-nXD">
+            <objects>
+                <viewController id="JgX-sd-ps7" customClass="AutoLayoutDemoViewController" customModule="AutoLayoutDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Z1-SB-dGV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3KO-ec-COG"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Auto Layout 1" image="car" catalog="system" id="UpC-pl-SR3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3C6-bh-Uhr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780" y="-279"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Swe-vV-lGG">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="L8h-OV-exR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LH9-91-MKT">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="JgX-sd-ps7" kind="relationship" relationship="viewControllers" id="fCU-Z6-Hsf"/>
+                        <segue destination="7YI-b1-QdH" kind="relationship" relationship="viewControllers" id="f1c-tY-TdD"/>
+                        <segue destination="cK5-mV-huy" kind="relationship" relationship="viewControllers" id="Eyn-y1-qfc"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="pVA-QK-nv1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uHn-CE-JIC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="136.60714285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car" catalog="system" width="64" height="46"/>
+        <image name="gauge" catalog="system" width="64" height="60"/>
+        <image name="hammer" catalog="system" width="64" height="56"/>
+        <image name="sunset" catalog="system" width="64" height="48"/>
+    </resources>
+</document>
