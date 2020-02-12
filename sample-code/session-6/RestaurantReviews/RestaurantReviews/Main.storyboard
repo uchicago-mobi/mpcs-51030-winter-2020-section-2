@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RestaurantReviews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="r51-Sz-jW6" customClass="RatingControl" customModule="RestaurantReviews" customModuleProvider="target">
+                                <rect key="frame" x="41" y="476.5" width="332" height="58"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOA-vy-Cjg">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="58"/>
+                                        <state key="normal" image="star"/>
+                                        <connections>
+                                            <action selector="didTapStar:" destination="r51-Sz-jW6" eventType="touchUpInside" id="Bka-Av-Kqz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rr5-hM-iFl">
+                                        <rect key="frame" x="68" y="0.0" width="60" height="58"/>
+                                        <state key="normal" image="star"/>
+                                        <connections>
+                                            <action selector="didTapStar:" destination="r51-Sz-jW6" eventType="touchUpInside" id="yJ6-Ma-FlD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opJ-pR-EgE">
+                                        <rect key="frame" x="136" y="0.0" width="60" height="58"/>
+                                        <state key="normal" image="star"/>
+                                        <connections>
+                                            <action selector="didTapStar:" destination="r51-Sz-jW6" eventType="touchUpInside" id="fDP-4l-KX0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOl-mt-WMa">
+                                        <rect key="frame" x="204" y="0.0" width="60" height="58"/>
+                                        <state key="normal" image="star"/>
+                                        <connections>
+                                            <action selector="didTapStar:" destination="r51-Sz-jW6" eventType="touchUpInside" id="mkO-yH-GqF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LT4-1j-ZVG">
+                                        <rect key="frame" x="272" y="0.0" width="60" height="58"/>
+                                        <state key="normal" image="star"/>
+                                        <connections>
+                                            <action selector="didTapStar:" destination="r51-Sz-jW6" eventType="touchUpInside" id="vBF-kT-W0X"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <connections>
+                                    <outletCollection property="stars" destination="FOA-vy-Cjg" collectionClass="NSMutableArray" id="JMY-3E-rJW"/>
+                                    <outletCollection property="stars" destination="Rr5-hM-iFl" collectionClass="NSMutableArray" id="tIt-0b-uyl"/>
+                                    <outletCollection property="stars" destination="opJ-pR-EgE" collectionClass="NSMutableArray" id="Anp-mZ-y88"/>
+                                    <outletCollection property="stars" destination="MOl-mt-WMa" collectionClass="NSMutableArray" id="gn4-hs-hst"/>
+                                    <outletCollection property="stars" destination="LT4-1j-ZVG" collectionClass="NSMutableArray" id="vEv-8P-zCw"/>
+                                </connections>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Girl &amp; the Goat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVm-Pd-YdU">
+                                <rect key="frame" x="103" y="327.5" width="208" height="41"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="West Loop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VH2-gd-Rj0">
+                                <rect key="frame" x="148.5" y="393.5" width="117" height="33"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhf-4Q-mBD">
+                                <rect key="frame" x="107.5" y="614.5" width="199.5" height="34.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VH2-gd-Rj0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Za-c0-YQv"/>
+                            <constraint firstItem="Dhf-4Q-mBD" firstAttribute="top" secondItem="r51-Sz-jW6" secondAttribute="bottom" constant="80" id="DjO-60-Rp7"/>
+                            <constraint firstItem="r51-Sz-jW6" firstAttribute="top" secondItem="VH2-gd-Rj0" secondAttribute="bottom" constant="50" id="LEn-9z-jvr"/>
+                            <constraint firstItem="JVm-Pd-YdU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dCc-aP-UOE"/>
+                            <constraint firstItem="VH2-gd-Rj0" firstAttribute="top" secondItem="JVm-Pd-YdU" secondAttribute="bottom" constant="25" id="dfU-7s-WLR"/>
+                            <constraint firstItem="JVm-Pd-YdU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="i1Q-za-yqd"/>
+                            <constraint firstItem="r51-Sz-jW6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pfR-JO-oCU"/>
+                            <constraint firstItem="Dhf-4Q-mBD" firstAttribute="centerX" secondItem="r51-Sz-jW6" secondAttribute="centerX" id="yzn-c1-dvO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="Dhf-4Q-mBD" id="RYt-J5-gMn"/>
+                        <outlet property="ratingControl" destination="r51-Sz-jW6" id="iec-Wu-DIa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="star" width="60" height="58"/>
+    </resources>
+</document>
