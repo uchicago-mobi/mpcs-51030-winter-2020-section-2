@@ -8,10 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, RatingControlDelegate {
     
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var ratingControl: RatingControl!
+    @IBOutlet var label: UILabel!
+    @IBOutlet var ratingControl: RatingControl!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        ratingControl.delegate = self
+    }
     
     func ratingControl(_ control: RatingControl, didSelectRating rating: Int) {
         switch rating {

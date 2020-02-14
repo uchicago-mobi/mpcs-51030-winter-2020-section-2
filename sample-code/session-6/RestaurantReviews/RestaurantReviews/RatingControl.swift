@@ -8,10 +8,17 @@
 
 import UIKit
 
+protocol RatingControlDelegate: class {
+    func ratingControl(_ control: RatingControl,
+                       didSelectRating rating: Int)
+}
+
 class RatingControl: UIStackView {
     
     @IBOutlet var stars: [UIButton]!
-        
+    
+    weak var delegate: RatingControlDelegate?
+    
     private let emptyStarImage = UIImage(imageLiteralResourceName: "star")
     private let filledStarImage = UIImage(imageLiteralResourceName: "star-filled")
 
@@ -26,6 +33,8 @@ class RatingControl: UIStackView {
                 star.setImage(filledStarImage, for: .normal)
                 rating = (selectedStar == star) ? index : stars.count
             }
-        }        
+        }
+        
+        delegate?.ratingControl(self, didSelectRating: rating)
     }
 }

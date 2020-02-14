@@ -22,10 +22,10 @@ class CollectionViewController: UICollectionViewController {
         states = text.components(separatedBy:"\n")
         
         // Create the diffable datasource
-        dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView) { collectionView, indexPath, city in
+        dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView) { collectionView, indexPath, state in
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
                                                           for: indexPath) as! CollectionViewCell
-            cell.label.text = city
+            cell.label.text = state
             return cell
         }
         
