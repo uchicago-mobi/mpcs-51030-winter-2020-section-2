@@ -12,7 +12,7 @@ struct Emoji: Codable, Identifiable {
     let name: String
     let year: String
     let imageName: String
-    let id: UUID = UUID()    
+    let id: UUID = UUID()
 }
 
 func emojiData() -> [Emoji] {

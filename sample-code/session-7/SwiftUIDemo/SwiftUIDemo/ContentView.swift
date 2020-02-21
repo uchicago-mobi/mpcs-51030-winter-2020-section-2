@@ -9,11 +9,26 @@
 import SwiftUI
 
 struct ContentView: View {
-        
+    
     let emojis: [Emoji] = emojiData()
     
+    @EnvironmentObject var preferences: Preferences
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            List {
+                Toggle(isOn: $preferences.displayYears, label: {
+                    Text("Display years")
+                })
+                
+                ForEach(emojis) { emoji in
+                    NavigationLink(destination: EmojiDetailView(emoji: emoji), label: {
+                      EmojiRow(emoji: emoji)
+                    })
+                }
+            }
+            .navigationBarTitle("Emojis")
+        }
     }
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6049D69923FE119D0011F341 /* EmojiRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6049D69823FE119D0011F341 /* EmojiRow.swift */; };
+		6049D69B23FE20C50011F341 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6049D69A23FE20C50011F341 /* Preferences.swift */; };
 		60C8DD1E23FCC89E006A3F2E /* FavoriteStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C8DD1D23FCC89E006A3F2E /* FavoriteStar.swift */; };
 		60E78D0923FB203200821FEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E78D0823FB203200821FEA /* AppDelegate.swift */; };
 		60E78D0B23FB203200821FEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E78D0A23FB203200821FEA /* SceneDelegate.swift */; };
@@ -20,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6049D69823FE119D0011F341 /* EmojiRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRow.swift; sourceTree = "<group>"; };
+		6049D69A23FE20C50011F341 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		6049D69C23FE257F0011F341 /* SwiftUIDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIDemo.entitlements; sourceTree = "<group>"; };
 		60C8DD1D23FCC89E006A3F2E /* FavoriteStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStar.swift; sourceTree = "<group>"; };
 		60E78D0523FB203200821FEA /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E78D0823FB203200821FEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,9 +69,12 @@
 		60E78D0723FB203200821FEA /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6049D69C23FE257F0011F341 /* SwiftUIDemo.entitlements */,
 				60E78D0823FB203200821FEA /* AppDelegate.swift */,
 				60E78D0A23FB203200821FEA /* SceneDelegate.swift */,
 				60E78D0C23FB203200821FEA /* ContentView.swift */,
+				6049D69A23FE20C50011F341 /* Preferences.swift */,
+				6049D69823FE119D0011F341 /* EmojiRow.swift */,
 				60E78D2423FB8EAA00821FEA /* EmojiDetailView.swift */,
 				60C8DD1D23FCC89E006A3F2E /* FavoriteStar.swift */,
 				60E78D1E23FB6E3300821FEA /* Emoji.swift */,
@@ -162,8 +170,10 @@
 				60E78D0923FB203200821FEA /* AppDelegate.swift in Sources */,
 				60E78D0B23FB203200821FEA /* SceneDelegate.swift in Sources */,
 				60E78D1F23FB6E3300821FEA /* Emoji.swift in Sources */,
+				6049D69923FE119D0011F341 /* EmojiRow.swift in Sources */,
 				60C8DD1E23FCC89E006A3F2E /* FavoriteStar.swift in Sources */,
 				60E78D2523FB8EAA00821FEA /* EmojiDetailView.swift in Sources */,
+				6049D69B23FE20C50011F341 /* Preferences.swift in Sources */,
 				60E78D0D23FB203200821FEA /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +310,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIDemo/SwiftUIDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = MED853AU4Q;
 				ENABLE_PREVIEWS = YES;
@@ -311,6 +323,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.susanstevens.SwiftUIDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -320,7 +333,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIDemo/SwiftUIDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = MED853AU4Q;
 				ENABLE_PREVIEWS = YES;
@@ -331,6 +346,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.susanstevens.SwiftUIDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
