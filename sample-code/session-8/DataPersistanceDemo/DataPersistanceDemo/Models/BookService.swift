@@ -30,7 +30,7 @@ class BookService {
     func saveBooks(books: [Book], with storageMethod: StorageMethod) {
         switch storageMethod {
         case .userDefaults:
-            saveToFile(books: books)
+            saveToUserDefaults(books: books)
         case .fileManager:
             saveToFile(books: books)
         }
